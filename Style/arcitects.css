@@ -14,7 +14,8 @@
 }
 
 .navbar,
-.nav-links {
+.nav-links,
+.team {
   display: flex;
 
 }
@@ -89,10 +90,136 @@
   margin-top: 40px;
 }
 
+
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.team {
+  margin-top: 85px;
+  margin-left: 301px;
+  align-items: center;
+  gap: 70px;
+}
+
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.our-features {
+  width: 537px;
+  height: 304px;
+}
+
+.feature-title {
+  width: 468px;
+  height: 106px;
+  font-weight: 400;
+  font-size: 2.8rem;
+  color: #727272;
+}
+
+.of-our {
+  font-weight: 700;
+  color: #131313;
+}
+
+.fea {
+  font-weight: 700;
+  color: #ff900e;
+}
+
+.features-description {
+  width: 537px;
+  height: 78px;
+  font-size: 1rem;
+  color: #727272;
+}
+
+.feature-container {
+  width: 1440px;
+  height: 1059px;
+  display: flex;
+
+}
+
+.feature-list {
+  width: 586px;
+  height: 982px;
+  margin: 0 auto;
+}
+
+.section-title {
+  width: 468px;
+  height: 106px;
+  padding-left: 21px;
+  font-size: 2.8rem;
+  color: #131313;
+}
+
+.card-list {
+  width: 586px;
+  height: 744px;
+  gap: 20px;
+}
+
+.card {
+  width: 586px;
+  height: 171px;
+  padding: 30px;
+  background-color: #FFFFFF;
+
+}
+
+.card-title {
+  width: 248px;
+  height: 23px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #131313;
+}
+.png{
+  width: 800px;
+  height: 1059px;
+}
+.experience{
+  width: 342px;
+  height: 200px;
+  padding: 42px;
+  color: #FFFFFF;
+  background-color: #ff900e;
+}
+.year{
+  font-weight: 700;
+  font-size: 4rem;
+}
+
 @media screen and (max-width: 576px) {
 
   .navbar,
-  .nav-links {
+  .nav-links,
+  .team {
     flex-direction: column;
+  }
+
+  .team-img-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .our-features {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .team {
+    flex-direction: column;
+  }
+
+  .our-features {
+    margin: 0 auto;
   }
 }
