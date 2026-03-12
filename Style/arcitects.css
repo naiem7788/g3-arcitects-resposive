@@ -147,8 +147,10 @@
   width: 1440px;
   height: 1059px;
   margin-left: 240px;
+  margin-bottom: 200px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
 
 }
 
@@ -161,9 +163,14 @@
 .section-title {
   width: 468px;
   height: 106px;
-  padding-left: 21px;
   font-size: 2.8rem;
   color: #131313;
+}
+
+#feature-section-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 21px;
+
 }
 
 .card-list {
@@ -176,13 +183,17 @@
   width: 586px;
   height: 171px;
   padding: 30px;
+  border-radius: 8px;
   background-color: #FFFFFF;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
 
 }
 
 .card-title {
   width: 248px;
   height: 23px;
+  margin: 0px;
+  margin-bottom: 0px;
   font-weight: 400;
   font-size: 1.2rem;
   color: #131313;
@@ -193,12 +204,18 @@
   height: 1059px;
 }
 
-.experience {
+.pag img {
+  width: 100%;
+}
+
+#experience-badge {
   width: 342px;
   height: 200px;
   border-radius: 8px;
   text-align: center;
   padding: 42px;
+  margin-top: -300px;
+  margin-left: -100px;
   color: #FFFFFF;
   background-color: #ff900e;
 }
@@ -206,7 +223,10 @@
 .year {
   font-weight: 700;
   font-size: 4rem;
+}
 
+#experience {
+  color: #FFFFFF;
 }
 
 .some-facts {
@@ -216,6 +236,8 @@
 .facts title {
   width: 258px;
   height: 53px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 
 
 }
@@ -292,6 +314,20 @@
   filter: grayscale(100%);
 }
 
+.fotter {
+  width: 1440px;
+  height: 100px;
+  margin: 100px 240px;
+  background-color: #fff4e7;
+}
+
+.footer {
+  padding-top: 40px;
+  font-size: 1rem;
+  color: #727272;
+  text-align: center;
+}
+
 
 @media screen and (max-width: 576px) {
 
@@ -303,7 +339,8 @@
 
   .team-img-container,
   .facts-container,
-  .sponsor-companies {
+  .sponsor-companies,
+  .feature-list {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -315,6 +352,11 @@
 
   .our-features {
     margin: 0 auto;
+  }
+
+  #experience-badge {
+    margin-top: 20px;
+    margin-left: 20px;
   }
 }
 
